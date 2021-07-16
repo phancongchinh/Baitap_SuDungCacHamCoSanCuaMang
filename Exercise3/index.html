@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <title>Swap the case of each character of a string</title>
+</head>
+<body>
+<script>
+      let str = prompt("Enter your string:");
+
+      const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+      let result = [];
+
+      for (let x=0; x < str.length; x++) {
+            if(UPPER.indexOf(str[x]) !== -1) {
+                  result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[x]) !== -1) {
+                  result.push(str[x].toUpperCase());
+            }
+            else {
+                  result.push(str[x]);
+            }
+      }
+      alert("The reverse string is: " + result.join(''));
+
+</script>
+</body>
+</html>
